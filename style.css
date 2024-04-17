@@ -8,6 +8,7 @@
   scroll-behavior: smooth;
 }
 
+
 /* Custom Scroll Bar CSS */
 ::-webkit-scrollbar {
     width: 10px;
@@ -48,6 +49,8 @@ nav .navbar .logo a{
   font-weight: 500;
   font-size: 35px;
   color: #4070f4;
+  
+  
 }
 nav.sticky .navbar .logo a{
   color: #fff;
@@ -213,7 +216,7 @@ section .title span::after{
 .about .about-details .left{
   width: 45%;
 }
-.about .left img{
+.about .left{
   height: 400px;
   width: 400px;
   object-fit:contain;
@@ -221,8 +224,15 @@ section .title span::after{
   
   border-radius: 12px;
 }
+
 .about-details .right{
-  width: 55%;
+  height: 400px;
+  width: 400px;
+  object-fit:contain;
+  
+  
+  border-radius: 12px;
+  
 }
 section  .topic{
   color: #0E2431;
