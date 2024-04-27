@@ -51,10 +51,14 @@ nav .navbar .logo a{
   color: #4070f4;
   
   
+  
+  
 }
 nav.sticky .navbar .logo a{
   color: #fff;
+  
 }
+
 nav .navbar .menu{
   display: flex;
   position: relative;
@@ -112,13 +116,17 @@ nav.sticky .menu-btn{
 
 /* home section styling */
 .home{
-  height: 100vh;
-  width: 100%;
-  background: url("./Images/bg.png") no-repeat;
-  background-size: cover;
-  background-position: center;
-  background-attachment: fixed;
+  
   font-family: 'Ubuntu', sans-serif;
+
+  margin: 0;
+  padding: 0;
+  background-image: url('./Images/bg.png'); /* Replace 'your-image.jpg' with the path to your image */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 100vh; /* Set the height of the body to fill the viewport height */
+  overflow: hidden;
 }
 .home .home-content{
   width: 90%;
@@ -518,5 +526,34 @@ footer .text span a:hover{
   .skills-details .boxes .per{
     font-size: 50px;
     color: #4070f4;
+  }
+}
+.arrow {
+  border: solid rgb(255, 255, 255);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 4px;
+}
+
+.up {
+  transform: rotate(-135deg);
+  -webkit-transform: rotate(-135deg);
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap; /* Allow columns to wrap to next row on smaller screens */
+}
+
+.column {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box; /* Include padding in the column's width */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 768px) {
+  .column {
+    flex-basis: 100%; /* Each column takes full width on smaller screens */
   }
 }
