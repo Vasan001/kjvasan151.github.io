@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <title>My Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="shortcut icon" type="image/jpg" href="Images/logo.png"/>
     <!-- Fontawesome CDN Link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -12,7 +13,7 @@
   <body>
     <!-- Move to up button -->
     <div class="scroll-button">
-      <a href="#home"><i class="fas fa-arrow-up"></i></a>
+      <a href="#home"><i class="arrow up"></i></a>
     </div>
     <!-- navgaition menu -->
     <nav>
@@ -44,10 +45,10 @@
     <section class="home" id="home">
       <div class="home-content">
         <div class="text">
-          <div class="text-one">Hello this is </div>
-          <div class="text-two">VASAN</div>
-          <div class="text-three">CSE student and emerging software developer</div>
-          <div class="text-four">Having great interest in Full Stack Web Development and UI/UX Designing</div>
+          <div class="text-one">Hello, I'm </div>
+          <div class="text-two">Vasan</div>
+          <div class="text-three">CSE student </div>
+          <div class="text-four">Having skills in Full Stack Web Development , Data Science and Artificial Intelligence</div>
             
           </div>
         </div>
@@ -58,24 +59,23 @@
     <section class="about" id="about">
       <div class="content">
         <div class="title"><span>About Me</span></div>
-        <div class="about-details">
-          <div class="left">
-            <div class="topic">Know about me!</div>
-            <br>
-            <p>
-              HI, I am VASAN. At SRM Valliammai Engineering College, I am working toward my degree. I currently have a 8.9/10 CGPA. I created an online store for ordering meals using HTML, CSS, and JavaScript. 
-              I also completed an internship at Kanyakumari's AK INFOPARK.
-              I'm taking part in various problem-solving activities in leetcode and geeks for geeks.
-            </p>
+        <div class="container">
+          <div class="column">
+            <h2>Know me!</h2>
+            <p>I am Vasan. I am studying at SRM Valliammai Engineering College to complete my degree. I presently have an 8.83/10 CGPA. I had previously worked on a deep learning project for a parking system. For this project, I utilized OpenCV, Yolov8, and PyTorch.
+              I attended a conference for this project. I also finished an internship at Kanyakumari's AK Infopark.
+              I'm participating in various problem-solving activities at Leetcode and Geeks for Geeks..</p>
           </div>
-          <div class="right">
-            <div class="topic">Projects</div>
-              <br>
-                <p>&#10004;  Voice Assistant using python</p><br>
-                <p>&#10004;  Blog website using Django</p><br>
-                <p>&#10004;  Calculator using React.js</p><br>
+          <div class="column">
+            <h2>Events Attended</h2>
+            <p>I participated in the National Seminar on Recent Advances in Big Data and Smart Computing.
+
+              I took a seminar on chatbots and generative AI.
+              I took a masterclass on the low-level design of payment apps.
               
-            
+              I went to a masterclass on real-world issue solving with data science tools.
+              Published a conference paper on smart parking.<br>
+          </p>
           </div>
         </div>
       </div>
@@ -89,27 +89,33 @@
         <div class="skills-details">
           <div class="text">
             <div class="topic">Skills Reflects Our Knowledge</div>
-            <p>I completed a Python course at Guvi and Computer Software College.
-              I have engaged in some problem-solving in both Leetcode and Geeks for Geeks.
-              Additionally, I completed a web programming course on udemy using HTML, CSS, and JavaScript.
+            <p>I finished a Python course at Guvi Computer Software College.
+              I also took data science courses through IBM and Udemy.
+              I completed a machine learning course on Coursera.
+              I've done some issue solving in both Leetcode and Geeks for Geeks.
+              In addition, I completed a Figma-based web design course at Guvi.
+              
+              
+              
+              
             </p>
             
           </div>
           <div class="boxes">
             <div class="box">
-              <div class="topic">HTML</div>
+              <div class="topic">Python</div>
               <div class="per">80%</div>
             </div>
             <div class="box">
-              <div class="topic">CSS</div>
-              <div class="per">60%</div>
+              <div class="topic">C++</div>
+              <div class="per">80%</div>
             </div>
             <div class="box">
               <div class="topic">JavScript</div>
               <div class="per">60%</div>
             </div>
             <div class="box">
-              <div class="topic">Python and C programming</div>
+              <div class="topic">Java</div>
               <div class="per">70%</div>
             </div>
           </div>
@@ -123,6 +129,36 @@
         <div class="title"><span>Certifications</span></div>
         <div class="boxes">
           <div class="box">
+            <a href="">
+            <div class="icon">
+              <i class="fas fa-atom"></i>
+            </div>
+            <div class="topic">Data Science</div>
+            <p>I obtained a data science using Python credential from IBM.</p></a>
+          </div>
+
+          <div class="box">
+            <a href="">
+            <div class="icon">
+              <i class="fas fa-atom" ></i>
+            </div>
+            <div class="topic">Data Science</div>
+            <p>I completed the course "python Numpy Data Analysis for Data Scientist" from Udemy.</p>
+          </a>
+          </div>
+           
+
+          <div class="box">
+            <a href="https://coursera.org/share/432a963ab855bb7069afb040f603cd75">
+            <div class="icon">
+              <i class="fas fa-robot"></i>
+            </div>
+            <div class="topic">Machine Learning</div>
+            <p>I completed the "Machine Learning with Python" course from Coursera.</p></a>
+          </div>
+
+
+          <div class="box">
             <a href="https://drive.google.com/file/d/1lRKzjxMtfVmHpytVxhNdOWkBS0qZlnOy/view?usp=drivesdk">
             <div class="icon">
               <i class="fas fa-desktop"></i>
@@ -131,7 +167,8 @@
             <p>I completed an internship in web development using HTML,CSS,BootStrap,JavaScript at AK INFOPARK in Kanyakumari.</p>
           </a>
           </div>
-          
+
+
           <div class="box">
             <a href="https://www.guvi.in/verify-certificate?id=2c1Ge886W8I3CV1474">
             <div class="icon">
@@ -141,39 +178,27 @@
             <p>I learned a python in Guvi and also in Computer Software College.</p>
           </a>
           </div>
-          <div class="box">
-            <a href="https://www.educba.com/certificate/?c=HEBDIBBLH">
-            <div class="icon">
-              <i class="fa fa-mobile" ></i>
-            </div>
-            <div class="topic">Apps Devlopment</div>
-            <p>I learned android app development in EDUCBA and earned a certificate</p>
-          </a>
-          </div>
+
+
           <div class="box">
             <a href="https://drive.google.com/file/d/1k4srOJHsWBkYTST8_9toBrvh7nE9hIrY/view?usp=drivesdk">
             <div class="icon">
               <i class="fas fa-code"></i>
             </div>
             <div class="topic">python programming</div>
-            <p>I completed a python course in Computer Software College at Kanyakumari</p>
+            <p>I completed a python course in Computer Software College(CSC)</p>
           </a>
           </div>
+
+
           
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-desktop"></i>
-            </div>
-            <div class="topic">Web Development</div>
-            <p>I leaned web development in Udemy and earned a certificate</p>
-          </div>
-          <div class="box">
-            <div class="icon">
-              <i class="fas fa-database"></i>
-            </div>
-            <div class="topic">SQL</div>
-            <p>I learned database using SQL in my college and in Udemy</p>
-          </div>
+          
+          
+          
+          
+          
+          
+          
          
           
         </div>
@@ -189,8 +214,8 @@
           <p>17/32,Sannathy st,Ganapathipuram & post, Kanyakumari District-629502
           </p>
           <div class="topic">Contact</div>
-          <p>Email: kjvasan28503@gmail.com</p>
-          <i class="fas fa-phone">+91 8825674340</i>
+          <p><i class="fa fa-envelope" style="font-size: 20px;"></i></a> vasankumarj@gmail.com</p>
+          <i class="fas fa-phone"> +91 8825674340</i>
           <div class="topic">Follow</div>
           <a href="https://www.linkedin.com/in/k-j-vasan-ab3924236"><i class="fab fa-linkedin" style="font-size: 30px;"></i></a>
           
